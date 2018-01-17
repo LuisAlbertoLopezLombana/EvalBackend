@@ -1,0 +1,15 @@
+{
+  "name": "apibuscador",
+  "version": "1.0.0",
+  "description": "Evaluación final backend NextU",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Alberto López Lombana",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
