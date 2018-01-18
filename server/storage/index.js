@@ -12,10 +12,20 @@ module.exports = {
       })
     })
   },
-  getData: function(){
+  getDataBienes: function(){
     let dataPath = __dirname + path.join('/data/data.json')
     return new Promise(function(resolver,rechazar){
       fs.readFile(dataPath, 'utf8', function(err, readData){
+        if(err) rechazar(err)
+        resolver(JSON.parse(readData))
+      })
+    })
+  },
+  getDataCiudades: function(){
+    let dataPath = __dirname + path.join('/data/data.json')
+    return new Promise(function(resolver,rechazar){
+      fs.readFile(dataPath, 'utf8', function(err, readData){
+          console.log("readData: "+readData)
         if(err) rechazar(err)
         resolver(JSON.parse(readData))
       })
